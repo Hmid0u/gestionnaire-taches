@@ -1,0 +1,47 @@
+/* 
+  Thème sombre global : définit les couleurs de fond et de texte
+  pour le corps de la page quand le mode "mode sombre" est activé.
+*/
+body.dark-mode {
+  background-color: #121212; /* Fond sombre général */
+  color: #e0e0e0; /* Texte blanc pour contraste */
+}
+
+/* 
+    Formulaires, menus déroulants et éléments de liste :
+    Applique un fond sombre et un texte blanc.
+  */
+body.dark-mode .form-control,
+body.dark-mode .form-select,
+body.dark-mode .list-group-item {
+  background-color: #1e1e1e; /* Fond légèrement plus clair que le fond général */
+  color: #e0e0e0; /* Texte lisible sur fond foncé */
+  border-color: #333; /* Bordure foncée pour cohérence avec le fond */
+}
+
+/* 
+    Boutons de validation (success) et suppression (danger) :
+    Harmonisation de leur couleur avec le thème sombre.
+  */
+body.dark-mode .btn-outline-success,
+body.dark-mode .btn-outline-danger {
+  color: #e0e0e0; /* Texte des boutons */
+  border-color: #888; /* Bordure plus visible dans un thème sombre */
+}
+
+/* 
+    Barre de progression :
+    Couleur de fond adaptée au thème sombre.
+  */
+body.dark-mode .progress {
+  background-color: #333; /* Fond sombre pour barre non remplie */
+}
+
+/* 
+    Placeholders (texte dans les champs vides) :
+    Rendu plus clair pour lisibilité dans le thème sombre.
+  */
+body.dark-mode ::placeholder {
+  color: #aaa !important; /* Texte des placeholders en gris clair */
+  opacity: 1; /* Force l'opacité pour tous les navigateurs */
+}
